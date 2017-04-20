@@ -1,0 +1,50 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.container-main {
+	height: 100%;
+	background-color: rgb(83, 92, 255);
+	
+}
+
+header {
+	padding: 2px;
+}
+
+.center-content {
+	width: 60%;
+	margin: 0 auto;
+}
+
+/* BACKGROUND COLOR FOR LANDING PAGE CONTENT */
+header,
+.main-content-background,
+footer {
+	background-color: rgb(226, 245, 255);
+}
+
+header,
+.main-content-background {
+	box-shadow: 0 2px 2px 1px rgb(0, 0, 0);
+}
+
+.main-content-background {
+	border-radius: 5px;
+}
+
+.inner-main-content {
+}
+
+.inner-main-content h1 {
+	padding: 5px;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}

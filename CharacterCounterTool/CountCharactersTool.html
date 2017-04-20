@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Count Characters Tool</title>
+		<link rel="stylesheet" type="text/css" href="../styles/main.css">
+		<link rel="stylesheet" type="text/css" href="CountCharacters.css">
+		<style>
+			div {
+				font-family: sans-serif;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<!-- CONTAINER WILL DEFINE THE SHARED STYLES FOR THE PAGE -->
+		<div class="container-main">
+			
+			<header>
+				<div class="center-content">
+					<h1>MindFire Support</h1>
+				</div>
+			</header>
+			
+				<div class="container">
+			<div class="main-content">
+				<div class="item-1 item">
+					<h1>Count Character Tool</h1>
+					<p class="note">Note: Blank spaces count as 1 character</p>
+				</div>
+				<div class="item-2 item">
+					<input type="text" id="wordPhrasing" placeholder="Enter the word or phrase">
+					<input type="button" onclick="getCharacterCount()" value="Get Your Count">
+				</div>
+				<div class="item-3 item" id="your-response">
+					
+				</div>
+			</div>
+		</div>
+		
+		<script>
+			function getCharacterCount() {
+				
+				var wordPhrase = document.getElementById('wordPhrasing').value;
+				var responseDiv = document.getElementById('your-response');
+				var openingPtag = "<p class=\"custom-response\">";
+				var closingPtag = "</p>";
+				
+				responseDiv.innerHTML = openingPtag + "Your Count: " + wordPhrase.length + closingPtag;
+				
+			}
+		</script>
+			
+			
+			<footer>
+				<div class="center-content">
+					<p>Built by Iram Pacheco Garcia</p>
+				</div>
+			</footer>
+			
+		</div>
+		
+	</body>
+</html>
